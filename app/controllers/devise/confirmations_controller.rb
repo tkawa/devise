@@ -1,4 +1,6 @@
-class Devise::ConfirmationsController < DeviseController
+class Devise::ConfirmationsController < ApplicationController
+  include Devise::Controllers::Core
+
   # GET /resource/confirmation/new
   def new
     self.resource = resource_class.new

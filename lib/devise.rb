@@ -16,6 +16,7 @@ module Devise
   autoload :TimeInflector,      'devise/time_inflector'
 
   module Controllers
+    autoload :Core, 'devise/controllers/core'
     autoload :Helpers, 'devise/controllers/helpers'
     autoload :Rememberable, 'devise/controllers/rememberable'
     autoload :ScopedViews, 'devise/controllers/scoped_views'

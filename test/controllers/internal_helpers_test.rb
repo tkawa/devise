@@ -1,6 +1,7 @@
 require 'test_helper'
 
-class MyController < DeviseController
+class MyController < ApplicationController
+  include Devise::Controllers::Core
 end
 
 class HelpersTest < ActionController::TestCase
